@@ -46,5 +46,9 @@ namespace konyv
 			return "";
 		}
 
+		public void EditBookData()
+		{
+
+		}
 	}
 }
