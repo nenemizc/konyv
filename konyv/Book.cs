@@ -46,8 +46,25 @@ namespace konyv
 			return "";
 		}
 
-		public void EditBookData()
+		public void EditBookData(string title = "", string author ="", int pageCount = 0, int releaseYear = 0)
 		{
+			if (title != "")
+			{
+				this.title = title; 
+			}
+			if (author != "")
+			{
+				this.author = author;
+			}
+            if (pageCount != 0)
+            {
+				this.pageCount = pageCount;
+            }
+			if (releaseYear != 0) 
+			{
+				this.releaseYear = releaseYear; 
+			}
+			Console.WriteLine($"Úk könyv adatok:\n{this.ToString()}");
 
 		}
 	}
