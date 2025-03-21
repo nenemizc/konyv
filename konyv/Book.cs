@@ -64,8 +64,13 @@ namespace konyv
 			{
 				this.releaseYear = releaseYear; 
 			}
-			Console.WriteLine($"Úk könyv adatok:\n{this.ToString()}");
+			Console.WriteLine($"Új könyv adatok:\n{this.ToString()}");
 
+		}
+
+		public override string ToString()
+		{
+			return $"Könyv címe: {title}\nKönyv írója: {author}\nLapok száma: {pageCount}\nKiadás éve: {releaseYear}";
 		}
 	}
 }
